@@ -78,6 +78,7 @@ Every `CopilotStep` must have these props:
 3. **text**: The text shown as the description for the step.
 
 You can round rectangle of copilot by specifying radius props for `CopilotStep`
+> Rounded rectange only work with svg overlay
 
 In order to start the tutorial, you can call the `start` prop function in the root component that is injected by `copilot`:
 

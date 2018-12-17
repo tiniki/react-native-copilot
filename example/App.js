@@ -85,7 +85,7 @@ class App extends Component {
           </WalkthroughableText>
         </CopilotStep>
         <View style={styles.middleView}>
-          <CopilotStep active={this.state.secondStepActive} text="Here goes your profile picture!" order={2} name="secondText">
+          <CopilotStep active={this.state.secondStepActive} text="Here goes your profile picture!" order={2} name="secondText" radius={100}>
             <WalkthroughableImage
               source={{ uri: 'https://pbs.twimg.com/profile_images/527584017189982208/l3wwN-l-_400x400.jpeg' }}
               style={styles.profilePhoto}
@@ -124,4 +124,5 @@ class App extends Component {
 export default copilot({
   animated: true, // Can be true or false
   overlay: 'svg', // Can be either view or svg
+  anywhereNext: true, // Allow next or finish by touch any where
 })(App);
